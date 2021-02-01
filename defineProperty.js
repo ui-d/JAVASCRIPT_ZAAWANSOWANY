@@ -33,3 +33,26 @@ Object.defineProperty(obj3, "Dev", {
   configurable: true, //if false, the property can't be deleted;
   enumerable: true, //if true, it will be iterated in for(var i in theObject); if false, it will not be iterated, but it is still accessible as public
 });
+
+// Object.defineProperties
+
+let obj4 = { a: 2, b: 3 };
+
+Object.defineProperties(obj4, {
+  name: {
+    value: "Flamingo",
+    configurable: true,
+    writable: true,
+    enumerable: false,
+  },
+  age: {
+    value: 35,
+    enumerable: true,
+  },
+});
+
+console.dir(obj4); /*?*/
+
+for (key in obj4) {
+  console.log(obj4[key]);
+}
