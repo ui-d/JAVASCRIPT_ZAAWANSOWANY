@@ -67,12 +67,16 @@ delete obj5Proxy.width;
 
 // defineProperty
 
-let obj5 = {};
+let obj6 = { test: 3 };
 
-let obj5Proxy = new Proxy(obj5, {
-  defineProperty(target, p, attr) {
-    console.log(target, p, attr);
+let obj6Proxy = new Proxy(obj6, {
+  defineProperty: (target, prop, val) => {
+    target[prop] = val;
+    console.log(target);
   },
 });
 
-obj5.test = 33;
+obj6Proxy["a"] = 3;
+obj6;
+
+//
