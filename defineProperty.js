@@ -41,7 +41,7 @@ let obj4 = { a: 2, b: 3 };
 Object.defineProperties(obj4, {
   name: {
     value: "Flamingo",
-    configurable: true,
+    configurable: false,
     writable: true,
     enumerable: false,
   },
@@ -51,8 +51,11 @@ Object.defineProperties(obj4, {
   },
 });
 
-console.dir(obj4); /*?*/
+/*?*/
 
 for (key in obj4) {
   console.log(obj4[key]);
 }
+
+delete obj4.name;
+console.dir(obj4);
