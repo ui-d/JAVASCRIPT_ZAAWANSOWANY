@@ -30,7 +30,7 @@ let obj3 = { age: 35 };
 Object.defineProperty(obj3, "Dev", {
   value: "male",
   writable: true, //if false, the property is read only;
-  configurable: true, //if false, the property can't be deleted;
+  configurable: true, //if false, any attempts to delete the property or change its attributes (Writable, Configurable, or Enumerable) will fail
   enumerable: true, //if true, it will be iterated in for(var i in theObject); if false, it will not be iterated, but it is still accessible as public
 });
 
