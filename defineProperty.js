@@ -1,5 +1,7 @@
 // OBJECT.DEFINEPROPERTY basics
 
+const { version } = require("typescript");
+
 let obj = {};
 
 Object.defineProperty(obj, "nameOfProp", {
