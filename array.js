@@ -1,4 +1,5 @@
 let arr = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9];
 
 arr.unshift(6); /*?*/
 arr.shift(); /*?*/
@@ -32,3 +33,7 @@ let arrFromMap = Array.from(map); /*?*/
 Array.isArray(arrFromMap); /*?*/
 
 Array.of(1, 2, 3, "Flamingo", true); /*?*/ // creates arr with all elements
+
+arr.concat(arr2); /*?*/
+
+let arr3 = [...arr, ...arr2]; /*?*/
