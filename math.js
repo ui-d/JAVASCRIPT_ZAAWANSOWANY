@@ -1,0 +1,11 @@
+let num = Math.PI; /*?*/
+let num2 = Math.abs(-4.4345); /*?*/
+let num3 = Math.ceil(-3.4454); /*?*/
+let num4 = Math.ceil(3.4454); /*?*/
+let num5 = Math.floor(3.4454); /*?*/
+let num6 = Math.floor(-3.4454); /*?*/
+let num7 = Math.max(...[1, 2, 33, 3, 4, 5, 6, 7]); /*?*/
+let num8 = Math.min(...[1, 2, 33]); /*?*/
+let num9 = Math.pow(4, 4); /*?*/
+let num10 = Math.round(4.49); /*?*/
+let num11 = Math.sqrt(9); /*?*/
