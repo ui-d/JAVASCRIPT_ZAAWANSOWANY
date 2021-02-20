@@ -6,4 +6,6 @@ function changeColors(el) {
   el.style.setProperty("--borderColor", "blue");
 }
 
-changeColors(paragraph);
+paragraph.addEventListener("click", function (e) {
+  changeColors(e.currentTarget);
+});
