@@ -1,0 +1,20 @@
+html {
+  background: darkgray;
+  --borderColor: blue;
+  --backgroundColor: black;
+  --fontSize: 23px;
+  --zIndex: 100;
+}
+
+p {
+  font-size: var(--fontSize);
+}
+
+p::after {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--borderColor);
+}
