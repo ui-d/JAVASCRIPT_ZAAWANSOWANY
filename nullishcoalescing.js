@@ -5,4 +5,13 @@ const value4 = undefined;
 
 const result = value1 || value2;
 const restult2 = value3 ?? value4;
-console.log(restult2);
+
+// nullish assignment
+
+let a = {
+  age: null,
+};
+
+a.age ??= 18; // only assigns if a.age is nullish (null or undefined).
+
+console.log(a.age);
