@@ -23,3 +23,13 @@ let set = new Set(arr);
 let objIterator = set[Symbol.iterator](); /*?*/
 
 objIterator.next(); /*?*/
+
+let map = new Map();
+
+map.set("name", "Flamingo");
+map.set("age", "12");
+
+let mapIterator = map[Symbol.iterator](); /*?*/
+
+mapIterator.next(); /*?*/
+mapIterator.next().value[0]; /*?*/
