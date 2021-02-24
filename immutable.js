@@ -15,7 +15,7 @@ let obj = {
 };
 
 function removeObjectProp(someObject, prop) {
-  const { property, ...restofprops } = someObject;
+  const { [prop]: q, ...restofprops } = someObject;
   return restofprops;
 }
 
