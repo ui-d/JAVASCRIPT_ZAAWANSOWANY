@@ -7,3 +7,16 @@ function removeElement(array, element) {
 }
 
 let newArr = removeElement(arr, 2); /*?*/
+
+let obj = {
+  name: "Flamingo",
+  age: 35,
+  height: 120,
+};
+
+function removeObjectProp(someObject, prop) {
+  const { property, ...restofprops } = someObject;
+  return restofprops;
+}
+
+let newObj = removeObjectProp(obj, "age"); /*?*/
