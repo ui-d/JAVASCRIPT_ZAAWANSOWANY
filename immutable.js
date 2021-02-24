@@ -16,7 +16,7 @@ let obj = {
 
 function removeObjectProp(someObject, prop) {
   const { [prop]: q, ...restofprops } = someObject;
-  return restofprops;
+  return [restofprops, q];
 }
 
 let newObj = removeObjectProp(obj, "age"); /*?*/
