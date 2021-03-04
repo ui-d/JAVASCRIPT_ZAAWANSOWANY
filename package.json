@@ -1,0 +1,22 @@
+{
+  "name": "js_playground",
+  "version": "1.0.0",
+  "description": "testing js features everyday",
+  "main": "array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ui-d/JAVASCRIPT_ZAAWANSOWANY.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ui-d/JAVASCRIPT_ZAAWANSOWANY/issues"
+  },
+  "homepage": "https://github.com/ui-d/JAVASCRIPT_ZAAWANSOWANY#readme",
+  "dependencies": {
+    "jsdoc": "^3.6.6"
+  }
+}
