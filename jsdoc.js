@@ -38,3 +38,14 @@ let newPlayer = new Player("Dawid", "21", false);
 function createNewPlayer(player) {
   console.log(player);
 }
+
+// Array example
+
+/**
+ * Return array of fixed numbers
+ *
+ * @return {number[]}
+ */
+function returnArray() {
+  return [1, 2, 3, 4, 21];
+}
