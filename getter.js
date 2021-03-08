@@ -9,3 +9,14 @@ const obj = {
 };
 
 obj.latest; /*?*/
+
+const obj2 = {
+  name: "Flamingo",
+  age: 35,
+  height: 186,
+  get getAge() {
+    return this.age;
+  },
+};
+
+obj2.getAge; /*?*/
