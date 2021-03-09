@@ -20,3 +20,14 @@ const obj2 = {
 };
 
 obj2.getAge; /*?*/
+
+const obj3 = {
+  name: "David",
+  set setName(newName) {
+    this.name = newName;
+  },
+};
+
+obj3.name; /*?*/
+obj3.setName = "Michu";
+obj3.name; /*?*/
