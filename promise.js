@@ -1,3 +1,5 @@
+let fetch = require("node-fetch");
+
 let newPromise = new Promise((resolve, reject) => {
   resolve("Flamingo");
 });
@@ -48,7 +50,18 @@ const myPromise = new Promise((resolve, reject) => {
   }, 300);
 });
 
-myPromise
-  .then(handleResolvedA, handleRejectedA)
-  .then(handleResolvedB, handleRejectedB)
-  .then(handleResolvedC, handleRejectedC);
+// myPromise
+//   .then(handleResolvedA, handleRejectedA)
+//   .then(handleResolvedB, handleRejectedB)
+//   .then(handleResolvedC, handleRejectedC);
+
+// any, race, all
+
+let f1 = fetch("https://reqres.in/api/users?page=1");
+let f1 = fetch("https://reqres.in/api/users?page=2");
+
+// let [page1, page2] = await Promise.race([f1, f2]);
+
+Promise.all([f1, f2]).then(([page1, page2]) =>
+  console.log(page1 + " " + page2)
+);
