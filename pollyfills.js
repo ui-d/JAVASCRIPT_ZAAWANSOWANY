@@ -34,3 +34,20 @@ const newArr = birds.newMap((el, index, arr) => {
 });
 
 console.log(newArr);
+
+// filter
+
+if (!Array.prototype.newFilter) {
+  Array.prototype.newFilter = function (clb, context) {
+    let newArr = [];
+    for (let item of this) {
+      if (callback.call(context, item)) {
+        newArray.push(item);
+      }
+      return newArr;
+    }
+  };
+}
+
+const numbers = [1, 2, 3];
+const objects = ["Flamingo", "Bluebird", "Snowdrop"];
