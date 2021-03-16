@@ -9,3 +9,7 @@ console.log(withSpaces); /*?*/
 
 const normalObj = { name: "John" };
 const refObj = new WeakRef({ name: "John" });
+
+const refObj = new WeakRef({ name: "John" });
+const obj = refObj.deref();
+console.log(obj.name); // John
