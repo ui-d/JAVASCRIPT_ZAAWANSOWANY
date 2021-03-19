@@ -11,4 +11,11 @@ const options = {
       'Content-Type': 'text/html'
   }),
 }  
+
 newCache.add(new Request('/cats.json', options))
+
+
+// cache.addAll
+
+const urls = ['pets/cats.json', 'pets/dogs.json'];
+newCache.addAll(urls);
