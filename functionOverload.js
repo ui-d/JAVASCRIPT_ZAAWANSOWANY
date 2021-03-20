@@ -22,3 +22,20 @@ sum();
 sum(5); 
 sum(5, 9);    
 sum(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+
+function concatStrings(a, b) {
+  switch(typeof a) {
+    case 'string':
+      return a + b;
+      break;
+    case 'number':
+      return a.toString() + b;
+      break;
+    default:
+      return "sth else"
+  }
+}
+
+
+concatStrings(3, 33); /*?*/
