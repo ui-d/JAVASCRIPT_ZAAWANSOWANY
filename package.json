@@ -18,6 +18,6 @@
   "homepage": "https://github.com/ui-d/JAVASCRIPT_ZAAWANSOWANY#readme",
   "dependencies": {
     "jsdoc": "^3.6.6",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.1.1"
   }
 }
